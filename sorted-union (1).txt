@@ -1,0 +1,6 @@
+function uniteUnique(arr) {
+  let arrayNew = [...arguments].flat()
+  return [...new Set(arrayNew)]
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);

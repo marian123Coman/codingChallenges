@@ -1,0 +1,16 @@
+
+function mutation(arr) {
+
+  let firstArray = arr[0].toLowerCase()
+  let secondArray = arr[1].toLowerCase().split('')
+  let c = 0
+  for(let i = 0 ; i <= secondArray.length ; i++){
+    if(firstArray.includes(secondArray[i])){
+      c++
+    }
+  }
+  return c===secondArray.length ? true : false
+}
+console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]))//true
+console.log(mutation(["hello", "hey"]))
+console.log(mutation(["Noel", "Ole"]))//true

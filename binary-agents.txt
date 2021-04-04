@@ -1,0 +1,8 @@
+function binaryAgent(str) {
+  let normalString = str.split(' ').map(function(elem){
+    return parseInt(elem,2)
+  }).map(function(num){
+    return String.fromCharCode(num)
+  }).join('')
+  return normalString
+}

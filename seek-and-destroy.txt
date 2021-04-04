@@ -1,0 +1,20 @@
+function destroyer(arr) {
+arr = arguments[0];
+var res= [];
+for (var i = 1; i < arguments.length; i++) {
+console.log(arguments[i]);
+for (var j = 0; j < arr.length; j++) {
+  if (arr[j] === arguments[i]) {
+    delete arr[j];
+    console.log(arr);
+  }
+}
+}
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    if (arr[i]) {
+      res.push(arr[i]);
+    }
+  }
+return res;
+}

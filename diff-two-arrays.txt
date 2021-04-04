@@ -1,0 +1,11 @@
+function diffArray(arr1, arr2) {
+  let arr = []
+  let sorted = arr1.concat(arr2).sort()
+  for(let  i = 0 ; i < sorted.length ; i++){
+    if(sorted[i] !== sorted[i+1] && sorted[i] !== sorted[i-1]){
+      arr.push(sorted[i])
+    }
+  }
+  console.log(arr)
+  return arr
+}

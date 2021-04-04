@@ -1,0 +1,11 @@
+function convertHTML(str) {
+  let arr =  str.split('').map(function(elem){
+   return elem === '<' ? elem = '&lt;' : elem &&
+          elem === '>' ? elem = '&gt;' : elem &&
+          elem === '"' ? elem = '&quot;': elem &&
+          elem === "'" ? elem = '&apos;' : elem &&
+          elem === '&' ? elem = '&amp;' : elem
+  }).join('')
+  console.log(arr)
+  return arr
+}

@@ -1,0 +1,10 @@
+function titleCase(str) {
+  let capitalized  = str.toLowerCase().split(' ').map(element => {
+  //  return element[0].toUpperCase().concat(element.slice(1))
+  return element[0].toUpperCase().concat(element.slice(1))
+  });
+  return capitalized.join(' ')
+  
+}
+
+titleCase("I'm a little tea pot");

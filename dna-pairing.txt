@@ -1,0 +1,15 @@
+
+function pairElement(str) {
+  return str.split('').map(function(element){
+    if(element === 'A'){
+      return ['A','T']
+    }else if(element === 'T'){
+      return ['T','A']
+    }else if(element === 'C'){
+      return ['C','G']
+    }else if (element === 'G'){
+      return ['G','C']
+    }
+  })
+  
+}
