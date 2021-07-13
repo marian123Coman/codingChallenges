@@ -1,0 +1,25 @@
+let ary = [-1, 2, -5, 3, 4, -2, 6];
+
+
+const someArray = (ary) => {
+  let sortedArr = ary.sort((a , b) => a  - b )
+  let result = []
+
+  let i = 0
+  let j = sortedArr.length - 1
+  let temp = false
+
+  while (i <= j) {
+    if(temp) {
+      result.push(sortedArr[i])
+      i++
+    }else {
+      result.push(sortedArr[j])
+      j--
+    }
+    temp = !temp
+  }
+  return result
+}
+
+console.log(someArray(ary))

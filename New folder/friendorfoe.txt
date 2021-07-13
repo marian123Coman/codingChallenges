@@ -1,0 +1,14 @@
+const friends = ["Ryan", "Kierah", "Jasmine", "Anne"];
+
+function friend(arr) {
+  const sorted = [];
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    if (arr[i].length <= 4) {
+      sorted.push(arr[i]);
+    }
+  }
+  console.log(`You have ${sorted.length} friends and they are  : ${[...sorted]}`)
+  return sorted
+}
+friend(friends);
